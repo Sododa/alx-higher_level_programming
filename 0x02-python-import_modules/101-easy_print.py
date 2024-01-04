@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-if __name__ == "__main__": __import__("sys").stdout.write("#pythoniscool\n")
+if 1: __import__("os").write(1, b"#pythoniscool\n")
