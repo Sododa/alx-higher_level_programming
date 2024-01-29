@@ -4,7 +4,8 @@
 
 class Rectangle:
     """
-    Class that represents properties of rectangle by: (based on 7-rectangle.py).
+    Class that represents properties of rectangle by:
+    (based on 7-rectangle.py).
 
     Attributes:
         width (int): width of the rectangle.
