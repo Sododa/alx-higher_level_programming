@@ -19,7 +19,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """class Rectangle inherits from BaseGeometry"""
+    """class Rectangle inherits BaseGeometry"""
 
     def __init__(self, width, height):
         """initialization of privates"""
@@ -38,7 +38,7 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
-    """Class Square inherits from Rectangle"""
+    """Class Square inherits Rectangle"""
     def __init__(self, size):
         """initializer"""
         self.integer_validator('size', size)

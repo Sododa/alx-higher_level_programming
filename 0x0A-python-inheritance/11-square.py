@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Write a class Square that inherits from Rectangle"""
+"""Write a class Square that inherits Rectangle"""
 
 
 class BaseGeometry:
@@ -19,7 +19,7 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """class square inherits from rectangle"""
+    """class square inherits rectangle"""
 
     def __init__(self, width, height):
         """instantiation"""
@@ -38,7 +38,7 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
-    """Class Square inherits from Rectangle"""
+    """Class Square inherits Rectangle"""
     def __init__(self, size):
         """initializer"""
         super().__init__(size, size)
