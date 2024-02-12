@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Describes base of a circle Base"""
+"""Describes base"""
 import json
 import os.path
 import csv
@@ -12,8 +12,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """defines unit test 
-        """
+        """defines init self"""
         if id is not None:
             self.id = id
         else:
@@ -22,7 +21,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """defines to json strin
+        """defines to json string
         """
         if list_dictionaries is None or list_dictionaries == "[]":
             return "[]"
@@ -30,7 +29,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """defines and saves to file list objects
+        """define save to file
         """
         filename = "{}.json".format(cls.__name__)
         list_dic = []
@@ -39,7 +38,7 @@ class Base:
             pass
         else:
             for j in range(len(list_objs)):
-                list_dic.append(list_objs[j].to_dictionary())
+                list_dic.append(list_objs[i].to_dictionary())
 
         lists = cls.to_json_string(list_dic)
 
@@ -48,14 +47,16 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """define from json strin"""
-     if json_string is None or len(json_string) == 0:
+        """ defines json string
+        """
+        if json_string is None or len(json_string) == 0:
             return []
         return(json.loads(json_string))
 
     @classmethod
     def create(cls, **dictionary):
-        """definationthat creates dictionaries"""
+        """defination to create dictionary.
+        """
         if cls.__name__ == "Rectangle":
             dummy = cls(1, 1)
         if cls.__name__ == "Square":
@@ -67,7 +68,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """define load from files
+        """define load from file
         """
         filename = "{}.json".format(cls.__name__)
 
@@ -87,7 +88,8 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """saves to file csv and class methods """
+        """define save to file
+        """
         filename = cls.__name__ + ".csv"
         with open(filename, 'w', newline="") as f:
             writer = csv.writer(f)
@@ -100,7 +102,7 @@ class Base:
 
     @classmethod
     def load_from_file_csv(cls):
-        """ load from file csv
+        """defines load from file
         """
         filename = cls.__name__ + ".csv"
         my_obj = []
@@ -123,7 +125,10 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """ draws list of rectangles and squares
+        """ Opens a window and draws all the Rectangles and Squares
+
+        NOT COMPLETE!!!!!!
+
         """
         window = turtle.Screen()
         turtle.speed(5)
