@@ -38,7 +38,7 @@ class Base:
             pass
         else:
             for j in range(len(list_objs)):
-                list_dic.append(list_objs[i].to_dictionary())
+                list_dic.append(list_objs[j].to_dictionary())
 
         lists = cls.to_json_string(list_dic)
 
@@ -125,10 +125,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """ Opens a window and draws all the Rectangles and Squares
-
-        NOT COMPLETE!!!!!!
-
+        """ draws list of rectangle and squares
         """
         window = turtle.Screen()
         turtle.speed(5)
