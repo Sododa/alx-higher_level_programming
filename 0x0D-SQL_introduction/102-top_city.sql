@@ -1,4 +1,4 @@
-__ script that displays the top 3 of cities temperature during July and Augu
+-- script that displays the top 3 of cities temperature during July and Augu
 CREATE TABLE IF NOT EXISTS temp_july_aug
        SELECT *
        FROM temperatures

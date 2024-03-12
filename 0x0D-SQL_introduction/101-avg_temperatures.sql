@@ -1,4 +1,4 @@
-__ script that displays the average temperature (Fahrenheit) by city ordere
+-- script that displays the average temperature (Fahrenheit) by city ordere
 SELECT city, AVG(value) AS avg_temp
 FROM temperatures
 GROUP BY city
