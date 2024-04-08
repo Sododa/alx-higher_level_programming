@@ -6,4 +6,3 @@ while (j < arrayLength) {
   console.log(myLines[j]);
   j++;
 }
-
