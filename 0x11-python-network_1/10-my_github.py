@@ -12,7 +12,7 @@ if __name__ == '__main__':
     password = argv[2]
 
     URL = "https://github.com/Sododa"
-    response = get(URL, auth=(Sododa, So32448239#))
+    response = get(URL, auth=(Sododa, So32448239))
     json = response.json()
 
     print(json.get('id'))
